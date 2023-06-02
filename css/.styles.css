@@ -15,6 +15,7 @@ body {
     height: 100%;
     position: fixed;
     background-color: #b84a00;
+    z-index: 3;
 }
 
 .center-side {
@@ -51,9 +52,9 @@ body {
     margin: 3px 0;
     font-weight: lighter;
     transition: all 0.5s ease-in-out;
-    
 
-}    
+
+}
 
 .selected {
     color: white;
@@ -98,6 +99,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 3;
 
 }
 
@@ -235,7 +237,8 @@ body {
     align-items: center;
     font-size: 22px;
     margin-left: 1%;
-    z-index: -1;
+    z-index: 0;
+    cursor: pointer;
 }
 
 .prox {
@@ -253,34 +256,62 @@ body {
     align-items: center;
     font-size: 22px;
     margin-right: 1%;
+    cursor: pointer;
+
 }
 
-.caixa-foto  {
+.caixa-foto {
     display: flex;
     overflow-x: auto;
-    
+
 
 }
 
 
 .caixa-foto img {
     height: 194px;
+    width: 290px;
     margin: 10px 10px;
     border-radius: 5px;
+   
 }
-.centra-foto-texto{
+
+
+
+.centra-foto-texto {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-.centra-foto-texto h3{
+
+.centra-foto-texto h3 {
     font-size: 17px;
-    text-shadow: 0 0 10px black;
+    color: rgb(94, 94, 94);
+    transition: all 0.4s ease-in-out;
+
 }
 
-.centra-foto-texto p{
+.centra-foto-texto h3:hover {
+    color: black;
+    cursor: pointer;
+
+}
+
+.centra-foto-texto h3::after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    height: 2px;
+    width: 80px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    transition: all 0.4s ease-in-out;
+
+}
+
+.centra-foto-texto p {
+    margin-top: -5px;
     font-size: 13px;
+    width: 185px;
 }
-
-    
