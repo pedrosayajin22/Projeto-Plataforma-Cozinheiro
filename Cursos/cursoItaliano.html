@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+  <link  href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.1.2/esm/ionicons.min.js">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="shortcut icon" href="https://as2.ftcdn.net/v2/jpg/01/99/85/83/1000_F_199858387_FymKsmjdD0Ss2el9eIstS7Y4UaBg5F6B.jpg" type="image/x-icon">
+
+  <link rel="stylesheet" href="../css/cursoItaliano.css">
+
+  <script>
+    function menu() {
+      const burguer = document.getElementById("sidebar")
+      if (burguer.style.display === "none") {
+        burguer.style.display = "block"
+      } else if (burguer.style.display === "block") {
+        burguer.style.display = "none"
+      }
+      else {
+        burguer.style.display = "block"
+      }
+    }
+
+    selectedh3 = null
+    function trocacor(event) {
+      const h3 = event.target;
+      if (selectedh3 != null) {
+        selectedh3.style.color = '';
+      }
+      if (h3 != selectedh3) {
+        h3.style.color = 'white';
+        selectedh3 = h3;
+      }
+      else {
+        selectedh3 = null;
+      }
+    }
+
+    function padrao() {
+            const padraoh3 = document.querySelectorAll('.menu h3');
+            padraoh3[2].style.color = 'white';
+            selectedh3 = padraoh3;
+        }
+        window.addEventListener('load', padrao);
+
+        
+    function apresentaTexto() {
+      document.querySelector("#aula1").classList.toggle("mostra")
+      if (document.querySelector("#aula2").classList.contains("mostra")) {
+        document.querySelector("#aula2").classList.toggle("mostra")
+      }
+      if (document.querySelector("#aula3").classList.contains("mostra")) {
+        document.querySelector("#aula3").classList.toggle("mostra")
+      }
+    }
+
+
+    function apresentaTexto2() {
+      document.querySelector("#aula2").classList.toggle("mostra")
+      if (document.querySelector("#aula1").classList.contains("mostra")) {
+        document.querySelector("#aula1").classList.toggle("mostra")
+      }
+
+      if (document.querySelector("#aula3").classList.contains("mostra")) {
+        document.querySelector("#aula3").classList.toggle("mostra")
+      }
+
+    }
+
+    function apresentaTexto3() {
+      document.querySelector("#aula3").classList.toggle("mostra")
+      if (document.querySelector("#aula1").classList.contains("mostra")) {
+        document.querySelector("#aula1").classList.toggle("mostra")
+      }
+
+      if (document.querySelector("#aula2").classList.contains("mostra")) {
+        document.querySelector("#aula2").classList.toggle("mostra")
+      }
+    }
+
+  </script>
+
+<title>LearnCook | Cursos</title>
+</head>
+
+<body>
+
+  <div class="sidebar" id="sidebar">
+    <div class="center-side">
+
+      <img src="../img/pedro.png" alt="">
+      <div class="menu" id="menu">
+        <h3 onclick="location.href='../css/index.html'">Area Principal</h3>
+        <h3 onclick="trocacor(event)">Conta</h3>
+        <h3 onclick="trocacor(event)">Cursos</h3>
+        <h3 onclick="trocacor(event)">Certificados</h3>
+        <h3 onclick="trocacor(event)">Marketplace</h3>
+        <h3 onclick="trocacor(event)">Conquistas</h3>
+      </div><!--Menu-->
+    </div><!--Center-side-->
+
+  </div><!--Sidebar-->
+  <div class="nav">
+    <div class="botao" id="botao">
+      <a href="#" onclick="menu()">
+        <i class="fa-solid fa-plus"></i>
+      </a>
+    </div><!--Nav-->
+
+    <div class=" nav-words">
+      <h2>Curso de Pratos Italianos</h2>
+    </div>
+
+    <div class="caixa-foto">
+      <img src="https://www.upf.br/Media/curso-culinaria-italiana_108405.jpg" alt="">
+      <div class="porcento">
+        <div class="botaoporcento"></div>
+        <div class="textoporcento">100%</div>
+      </div><!--caixa foto-->
+      <div class="caixa-texto">
+
+        <div>
+          <h2 onclick="apresentaTexto()">Modulo 1 : Apresentação <ion-icon name="arrow-down-outline"></ion-icon></h2>
+          <div class="texto-aula" id="aula1">
+            <h5>Professores : 10min</h5>
+            <h5>Apresentado o curso : 10min</h5>
+            <h5>Como conseguir o certificado : 5min</h5>
+          </div>
+        </div>
+
+        <div>
+          <h2 onclick="apresentaTexto2()">Modulo 2 : Receitas</h2>
+          <div class="texto-aula" id="aula2">
+            <h5>Lasanha : 30min</h5>
+            <h5>Risoto de Funghi: : 30min</h5>
+            <h5>Pizza Margherita: 30min</h5>
+            <h5>Tiramisu : 30min</h5>
+            <h5>Ravióli de Ricota e Espinafre: 30min</h5>
+          </div>
+        </div>
+
+        <div>
+          <h2 onclick="apresentaTexto3()">Modulo 3 : Receitas finais</h2>
+          <div class="texto-aula" id="aula3">
+            <h5>Cassoulet : 50min</h5>
+            <h5>Coq au Vin : 50min </h5>
+            <h5>Salmão en Croûte : 50min </h5>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

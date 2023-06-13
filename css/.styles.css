@@ -123,7 +123,6 @@ body {
     width: 250px;
     height: 200px;
     z-index: -1;
-    flex-direction: column;
 }
 
 .visivel {
@@ -191,6 +190,7 @@ body {
     margin-top: 15px;
     margin-left: 4%;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .text-content::after {
@@ -204,6 +204,9 @@ body {
 
 .curso {
     margin-top: 90%;
+    color: #ff8534;
+    font-family: "Poppins", sans-serif;
+
 }
 
 .curso::after {
@@ -273,7 +276,7 @@ body {
     width: 290px;
     margin: 10px 10px;
     border-radius: 5px;
-   
+
 }
 
 
@@ -314,4 +317,121 @@ body {
     margin-top: -5px;
     font-size: 13px;
     width: 185px;
+}
+
+
+
+@media screen and (min-width:375px) {
+    .area {
+        display: none;
+        position: absolute;
+        top: 40%;
+        left: calc(50% - 146px);
+        transform: translateY(-50%);
+        height: 200px;
+        z-index: -1;
+    }
+
+
+    .area img {
+        width: 285px;
+
+    }
+
+    .visivel {
+        display: block;
+
+    }
+
+    .play {
+
+        left: 47%;
+    }
+
+    .curso {
+        margin-top: 75%;
+    }
+
+
+}
+
+@media screen and (min-width:425px) {
+    .area {
+        display: none;
+        position: absolute;
+        top: 40%;
+        left: calc(50% - 173px);
+        transform: translateY(-50%);
+        height: 200px;
+        z-index: -1;
+    }
+
+
+    .area img {
+        width: 338px;
+
+    }
+
+    .visivel {
+        display: block;
+
+    }
+
+    .play {
+
+        left: 58%;
+    }
+
+    .curso {
+        margin-top: 66%;
+    }
+
+    @media screen and (min-width:768px) {
+        .area {
+            display: none;
+            position: absolute;
+            top: 40%;
+            left: calc(50% - 173px);
+            transform: translateY(-50%);
+            height: 200px;
+            z-index: -1;
+        }
+
+
+        .area img {
+            width: 338px;
+
+        }
+
+        .visivel {
+            display: block;
+
+        }
+
+        .play {
+
+            left: 58%;
+        }
+
+        .curso {
+            margin-top: 33%;
+        }
+        .prox{
+            left:558px
+        }
+        .atras{
+            left:160px
+        }
+        .sidebar img{
+            width: 49%;
+        }
+        .menu{
+            top:52%
+        }
+        .menu h3{
+            font-size: 17px;
+        }
+    }
+
+
 }

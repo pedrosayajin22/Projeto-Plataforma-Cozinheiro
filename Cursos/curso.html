@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.1.2/esm/ionicons.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/curso.css">
+
+    <script>
+        function menu() {
+            const burguer = document.getElementById("sidebar")
+            if (burguer.style.display === "none") {
+                burguer.style.display = "block"
+            } else if (burguer.style.display === "block") {
+                burguer.style.display = "none"
+            }
+            else {
+                burguer.style.display = "block"
+            }
+        }
+
+        selectedh3 = null
+        function trocacor(event) {
+            const h3 = event.target;
+            if (selectedh3 != null) {
+                selectedh3.style.color = '';
+            }
+            if (h3 != selectedh3) {
+                h3.style.color = 'white';
+                selectedh3 = h3;
+            }
+            else {
+                selectedh3 = null;
+            }
+        }
+
+        function padrao() {
+            const padraoh3 = document.querySelectorAll('.menu h3');
+            padraoh3[2].style.color = 'white';
+            selectedh3 = padraoh3;
+        }
+        window.addEventListener('load', padrao);
+    </script>
+     <title>Document</title>
+    </head>
+    
+    <body>
+    
+        <div class="sidebar" id="sidebar">
+            <div class="center-side">
+    
+                <img src="../img/pedro.png" alt="">
+                <div class="menu" id="menu">
+                    <h3 onclick="location.href='../css/index.html'">Area Principal</h3>
+                    <h3 onclick="trocacor(event)">Conta</h3>
+                    <h3 onclick="trocacor(event)">Cursos</h3>
+                    <h3 onclick="trocacor(event)">Certificados</h3>
+                    <h3 onclick="trocacor(event)">Marketplace</h3>
+                    <h3 onclick="trocacor(event)">Conquistas</h3>
+                </div><!--Menu-->
+            </div><!--Center-side-->
+    
+        </div><!--Sidebar-->
+        <div class="nav">
+            <div class="botao" id="botao">
+                <a href="#" onclick="menu()">
+                    <i class="fa-solid fa-plus"></i>
+                </a>
+            </div><!--Nav-->
+
+            <div class=" nav-words">
+                <h2>Cursos</h2>
+            </div><!--Nav-words-->
