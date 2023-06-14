@@ -72,9 +72,11 @@ body {
     color: white;
     font-weight: 500;
 }
-.nav-words h2{
+
+.nav-words h2 {
     text-align: center;
 }
+
 .botao {
     width: 30px;
     height: 30px;
@@ -96,3 +98,133 @@ body {
 }
 
 
+.barra-pesquisa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 250px;
+    background-color: #ffb888;
+    border: 2px solid #ff8534;
+    margin: 10px auto;
+    border-radius: 40px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+.barra-pesquisa h4 {
+    margin-left: 10px;
+    color: #ff6600;
+}
+
+.barra-pesquisa i {
+    margin-right: 10px;
+    color: #ff6600;
+}
+
+
+.continuar-assistindo h2 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.continuar-assistindo h2::after {
+    content: "";
+    display: block;
+    width: 180px;
+    height: 3px;
+    background-color: #ff8534;
+    border-radius: 30px;
+}
+
+.continuar-assistindo img {
+    width: 200px;
+    height: 200px;
+    margin: 0 5px;
+    filter: brightness(75%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.barra-tempo {
+    position: relative;
+    width: 150px;
+    margin-top: -9px;
+    margin-left: 5px;
+    height: 5px;
+    background-color: red;
+    z-index: 2;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.barra-tempo::after {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: rgb(0, 0, 0, 0.50);
+    margin-left: 150px;
+
+}
+
+.caixa-foto {
+    display: flex;
+    overflow-x: auto;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.caixa-foto::-webkit-scrollbar {
+    display: none;
+}
+.mais-cursos .caixa-foto div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.caixa-foto h5{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+
+.mais-cursos h2 {
+    margin: 10px 5px 7px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 17px;
+
+}
+.mais-cursos .caixa-foto h3::after{
+    content: "";
+    display: block;
+    margin-top: 2px;
+    height: 3px;
+    width: 138px;
+    background-color: #ff8534;
+    border-radius: 20px;;
+}
+
+.mais-cursos h2::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 83px;
+    background-color: #ff8534;
+    border-radius: 20px;
+}
+
+.mais-cursos img {
+    width: 200px;
+    height: 200px;
+    margin: 0 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.mais-cursos .caixa-foto div:last-child{
+    filter: blur(10px);
+}
