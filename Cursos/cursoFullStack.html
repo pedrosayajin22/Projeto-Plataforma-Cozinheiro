@@ -6,9 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
-  <link  href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.1.2/esm/ionicons.min.js">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/7.1.2/esm/ionicons.min.js">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="shortcut icon" href="https://as2.ftcdn.net/v2/jpg/01/99/85/83/1000_F_199858387_FymKsmjdD0Ss2el9eIstS7Y4UaBg5F6B.jpg" type="image/x-icon">
+  <link rel="shortcut icon"
+    href="https://as2.ftcdn.net/v2/jpg/01/99/85/83/1000_F_199858387_FymKsmjdD0Ss2el9eIstS7Y4UaBg5F6B.jpg"
+    type="image/x-icon">
 
   <link rel="stylesheet" href="../css/cursoFullstack.css">
 
@@ -41,12 +43,12 @@
     }
 
     function padrao() {
-            const padraoh3 = document.querySelectorAll('.menu h3');
-            padraoh3[2].style.color = 'white';
-            selectedh3 = padraoh3;
-        }
-        window.addEventListener('load', padrao);
-        
+      const padraoh3 = document.querySelectorAll('.menu h3');
+      padraoh3[2].style.color = 'white';
+      selectedh3 = padraoh3;
+    }
+    window.addEventListener('load', padrao);
+
     function apresentaTexto() {
       document.querySelector("#aula1").classList.toggle("mostra")
       if (document.querySelector("#aula2").classList.contains("mostra")) {
@@ -83,7 +85,7 @@
 
   </script>
 
-<title>LearnCook | Cursos</title>
+  <title>LearnCook | Cursos</title>
 </head>
 
 <body>
@@ -95,9 +97,9 @@
       <div class="menu" id="menu">
         <h3 onclick="location.href='../css/index.html'">Area Principal</h3>
         <h3 onclick="trocacor(event)">Conta</h3>
-        <h3 onclick="trocacor(event)">Cursos</h3>
+        <h3 onclick="location.href='../Cursos/curso.html'">Cursos</h3>
         <h3 onclick="trocacor(event)">Certificados</h3>
-        <h3 onclick="trocacor(event)">Vender</h3>
+        <h3 onclick="location.href='../css/marktplace.html'">Vender</h3>
         <h3 onclick="trocacor(event)">Conquistas</h3>
       </div><!--Menu-->
     </div><!--Center-side-->
@@ -152,8 +154,16 @@
         </div>
 
 
+
       </div>
     </div>
+    <div class="assistir">
+      <div class="caixa-assistir">
+          <div class="play">
+              <i class="fa-sharp fa-regular fa-circle-play"></i>
+          </div>
+      </div>
+  </div>
   </div>
 </body>
 
