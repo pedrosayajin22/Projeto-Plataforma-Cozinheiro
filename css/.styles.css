@@ -473,6 +473,9 @@ body {
     .play3 i{
         font-size: 40px;
     }
+    .sidebar{
+        width: 17%;
+    }
 
     .play1{
         position: relative;

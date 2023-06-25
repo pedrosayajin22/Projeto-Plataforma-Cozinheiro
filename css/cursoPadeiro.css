@@ -219,10 +219,29 @@ body {
         font-family: 'Quicksand', sans-serif;
     }
 }
+@media screen and (min-width:768px) {
+    .sidebar img {
+
+        width: 149px;
+        height: 131px;
+
+    }
+
+    .menu {
+        top: 52%
+    }
+
+    .menu h3 {
+        font-size: 17px;
+    }
+}
 
 @media screen and (min-width:1024px) {
     .caixa-foto {
         right: 79px;
+    }
+    .sidebar{
+        width: 17%;
     }
 
     .assistir {
@@ -250,7 +269,14 @@ body {
 
     }
 
-
+.sidebar img{
+    width: 150px;
+    height: 150px;
+}
+.menu h3{
+    margin-top: -3px;
+    font-size: 17px;
+}
 
 }
 @media screen and (min-width:1440px) {
