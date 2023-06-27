@@ -170,6 +170,9 @@ body {
     margin-left: 150px;
 
 }
+.continuar-assistindo .caixa-foto div:nth-of-type(4){
+    display: none;
+}
 
 .caixa-foto {
     display: flex;
@@ -190,7 +193,9 @@ body {
     margin-left: 10px;
     margin-bottom: 10px;
 }
-
+.mais-cursos .caixa-foto div:last-child{
+    display: none;
+}
 
 .mais-cursos h2 {
     margin: 10px 5px 7px;
@@ -225,6 +230,88 @@ body {
     margin-bottom: 10px;
 }
 
-.mais-cursos .caixa-foto div:last-child{
-    filter: blur(10px);
+
+
+@media screen and (min-width:690px) {
+    .menu{
+        margin-top: 10px;
+    }
+    .continuar-assistindo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;   
+    }
+    .continuar-assistindo h2{
+        font-size: 28px;
+    }
+    .continuar-assistindo h2::after{
+        width: 269px;
+    }
+    
+    .mais-cursos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+
+    }
+    .mais-cursos img{
+        width: 90%;
+        
+    }
+    .mais-cursos h2{
+        font-size: 28px;
+    }
+    .mais-cursos h2::after{
+        width: 91px;
+    }
+    .sidebar img{
+        
+        width: 149px;
+        height: 131px;
+    
+}
+.menu{
+    top:52%
+}
+.menu h3{
+    font-size: 17px;
+}
+   
+    
+}
+@media screen and (min-width:1024px) {
+    .mais-cursos .caixa-foto div:last-child{
+        display: flex;
+    }
+    .continuar-assistindo .caixa-foto div:nth-of-type(4){
+        display: block;
+    }
+    .sidebar{
+        width: 17%;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .menu{
+        margin-top: 0px;
+    }
+    
+   
+  
+    .mais-cursos{
+        margin-top: 20px;
+    }
+   
+    .mais-cursos img{
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+    .mais-cursos .caixa-foto div{
+        margin: 0 20px  ;
+
+    }
+
 }

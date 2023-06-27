@@ -42,6 +42,8 @@ body {
     top: 50%;
     transform: translateY(-50%);
     color: rgb(178 178 178);
+    cursor: pointer;
+
 }
 
 .menu h3 {
@@ -233,7 +235,9 @@ body {
     }
 
     .menu {
-        top: 52%
+        top: 52%;
+        margin-top: 10%;
+
     }
 
     .menu h3 {
@@ -291,6 +295,10 @@ body {
     }
     .caixa-assistir{
         left:150px
+    }
+    .menu h3 {
+        font-size: 23px;
+
     }
     
 }
